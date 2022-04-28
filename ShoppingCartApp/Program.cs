@@ -10,7 +10,7 @@ namespace ShoppingCartApp
         {
             ShoppingCart cart = new ShoppingCart();
 
-            ShoppingCartItem item = new ShoppingCartItem("Rice", 109.00);
+            ShoppingCartItem item = new ShoppingCartItem(" Rice", 109.00);
             cart.AddShoppingItem(item);
 
 
@@ -25,15 +25,15 @@ namespace ShoppingCartApp
 
 
             List<ShoppingCartItem> items = cart.CartList();
-           foreach(ShoppingCartItem shoppingItem in items)
+            foreach(ShoppingCartItem shoppingItem in items)
             {
-                Console.WriteLine(shoppingItem.ItemName + " R" + shoppingItem.Price);
+                Console.WriteLine(shoppingItem.ItemName + "          R" + shoppingItem.Price);
             }
             
             
             
-            Console.WriteLine("Sub Total R" + cart.GetSubTotal());
-            Console.WriteLine("With VAT  R" + cart.Vat());
+            Console.WriteLine("Sub Total     R" + cart.GetSubTotal());
+            Console.WriteLine("With VAT      R" + cart.Vat());
 
 
             // ShoppingCartItem test1 = new ShoppingCartItem();
