@@ -23,6 +23,7 @@ namespace ShoppingLibrary
         { get {
                 return _price;
               } 
+
          set  { 
                 _price = value;
               } 
@@ -32,6 +33,7 @@ namespace ShoppingLibrary
         { get {
                 return _itemName; 
               }
+
           set { 
                 _itemName = value; 
               }

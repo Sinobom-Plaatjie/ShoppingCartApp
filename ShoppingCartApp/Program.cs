@@ -25,7 +25,7 @@ namespace ShoppingCartApp
 
 
             List<ShoppingCartItem> items = cart.CartList();
-            foreach(ShoppingCartItem shoppingItem in items)
+           foreach(ShoppingCartItem shoppingItem in items)
             {
                 Console.WriteLine(shoppingItem.ItemName + " R" + shoppingItem.Price);
             }
