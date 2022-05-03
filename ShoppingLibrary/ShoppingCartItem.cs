@@ -20,7 +20,8 @@ namespace ShoppingLibrary
      
 
         public double Price
-        { get {
+        { 
+         get {
                 return _price;
               } 
 
@@ -30,7 +31,8 @@ namespace ShoppingLibrary
         }
 
         public string ItemName
-        { get {
+        { 
+            get {
                 return _itemName; 
               }
 

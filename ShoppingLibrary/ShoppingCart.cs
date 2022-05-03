@@ -7,7 +7,7 @@ namespace ShoppingLibrary
     {
         private List<ShoppingCartItem> _items = new List<ShoppingCartItem>();
        
-        private double _total = 0;
+        
         public void AddShoppingItem(ShoppingCartItem item)
         {
             _items.Add(item);
@@ -20,19 +20,18 @@ namespace ShoppingLibrary
 
         public double GetSubTotal()
         {
-            
-
+            double subTotal = 0;
             foreach (ShoppingCartItem item in _items)
             {
-                _total += item.Price;
+                subTotal += item.Price;
             }
 
-            return _total;
+            return subTotal;
         }
         public double Vat()
         {
-              double vat = 0;
-              vat = GetSubTotal() + GetSubTotal()*0.15;            
+            double vat = 0;
+            vat = (GetSubTotal() * 1.15);            
               return vat; 
         }
 
